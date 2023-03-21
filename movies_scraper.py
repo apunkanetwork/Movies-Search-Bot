@@ -33,6 +33,6 @@ def get_movie(query):
         movie_details["img"] = img
         links = movie_page_link.find_all("a", {'rel': 'noopener', 'data-wpel-link': 'internal'})
         movie_details["links"] = links
-    
+    return movie_details
     
 
